@@ -21,10 +21,42 @@ nav>ul>li>a{
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
-    color: aliceblue;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 1px black;
     padding: 10px;
     transition: transform 0.3s ease;
 }
 nav>ul>li>a:hover{
     transform: scale(1.1);
+}
+main>.inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    background-color: #B3C8CF;
+    padding:0px 16px;
+}
+main>.inicio>img{
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF
+}
+main>.inicio>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+}
+main>.inicio>div>h1{
+    margin: 0;
+    font-size: 26px;
+}
+main>.inicio>div>p{
+    margin: 0;
+    font-size: 18px;
 }
