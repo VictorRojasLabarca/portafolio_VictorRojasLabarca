@@ -60,3 +60,57 @@ main>.inicio>div>p{
     margin: 0;
     font-size: 18px;
 }
+main>.conocimientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #E5E1DA;
+    padding-top: 50px;
+}
+main>.conocimientos>.titulo,.cursos{
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+    padding: 16px;
+}
+main>.conocimientos>.titulo>p{
+    margin-top: 6px;
+}
+main>.conocimientos>.cursos>p{
+    margin-top: 6px;
+}
+main>.conocimientos>.tecnologias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+    margin: 30px;
+    padding: 16px;
+}
+main>.conocimientos>.tecnologias>h2 {
+    margin-bottom: 20px;
+}
+main>.conocimientos>.tecnologias>.tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+}
+main>.conocimientos>.tecnologias>.tarjeta>section{
+    background-color: #B3C8CF;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 24px;
+    width: 230px;
+    height: 180px;
+    box-shadow: 5px 2px 1px black;
+}
+main>.conocimientos>.tecnologias>.tarjeta>section>h3{
+    margin-bottom: 15px;
+}
+main>.conocimientos>.tecnologias>.tarjeta>section>ul{
+    padding: 0px 20px;
+}
+
