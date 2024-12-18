@@ -11,23 +11,34 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Conocimientos</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre_mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="inicio">
-        <img src="assets/perfil.jpg" alt="imagen_perfil" srcset="" />
+      <div class="inicio" id="inicio">
+        <img src="assets/perfil.jpg" alt="imagen_perfil" />
         <div>
           <h1>Hola! mi nombre es Victor Rojas Labarca</h1>
           <p>Técnico informático que le gusta el desarollo Backend.</p>
+          <div class="links">
+            <a href="#"
+              ><img src="/assets/github-mark.svg" alt="logo_github"
+            /></a>
+            <a href="#"
+              ><img
+                class="cv"
+                src="/assets/description_36_.svg"
+                alt="descargar_curriculum"
+            /></a>
+          </div>
         </div>
       </div>
-      <div class="conocimientos">
+      <div class="conocimientos" id="conocimientos">
         <div class="titulo">
           <h2>Título</h2>
           <p>Técnico Superior en Infomática | Instituto IACC | 2024</p>
@@ -79,21 +90,66 @@
           </div>
         </div>
       </div>
-      <div class="proyectos">
+      <div class="proyectos" id="proyectos">
         <p>Acá irán los proyectos</p>
       </div>
-      <div class="sobre_mi">
-        <h3>Un poco sobre mí</h3>
-        <p>
-          Chileno que vive en la ciudad de Antofagasta, busco adentrarme lo
-          máximo que pueda en el mundo del desarrollo y de las tecnologías de la
-          información. Me caracterizo por ser autodidacta y trato de llevar nota
-          de lo que aprendo hasta que quede interiorizado en mi cerebro que a
-          veces funciona como el de Dory.
-        </p>
+      <div class="sobre_mi" id="sobre_mi">
+        <div class="contenido_sobremi">
+          <h3>Un poco sobre mí</h3>
+          <p>
+            Chileno que vive en la ciudad de Antofagasta, busco adentrarme lo
+            máximo que pueda en el mundo del desarrollo y de las tecnologías de
+            la información. Me caracterizo por ser autodidacta y trato de llevar
+            nota de lo que aprendo hasta que quede interiorizado en mi cerebro
+            que a veces funciona como el de Dory.
+          </p>
+          <p>
+            También tengo un perrito llamado Codialiano Maximiliano de las
+            Mercedes II. Pero para los amigos 'Cody', es un perrito sin marca el
+            cual se queda con todo el cariño. Por acá pondré una foto para
+            referencias.
+          </p>
+        </div>
       </div>
-      <div class="contacto">
-        <p>Formulario de contacto</p>
+      <div class="contacto" id="contacto">
+        <div class="formulario_contacto">
+          <form action="" method="post">
+            <h3>Formulario de contacto</h3>
+            <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                name="nombre"
+                id=""
+                placeholder="*Nombre"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="*email@email.com"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="motivo">Motivo del contacto:</label>
+              <textarea
+                name="motivo"
+                id=""
+                cols="50"
+                rows="10"
+                placeholder=" Breve descripción del motivo de contacto..."
+              ></textarea>
+            </div>
+            <div class="campo">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer></footer>

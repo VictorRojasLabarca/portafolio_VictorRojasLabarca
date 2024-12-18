@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family:'Verdana', Geneva, Tahoma, sans-serif
 }
+html{
+    scroll-behavior: smooth;
+}
 header>nav{
     display: flex;
     justify-content: center;
@@ -22,12 +25,14 @@ nav>ul>li>a{
     text-decoration: none;
     font-size: 1.2rem;
     color: #FFFFFF;
-    text-shadow: 4px 2px 1px black;
+    /* text-shadow: 4px 2px 1px black; Ajuste visual*/
     padding: 10px;
     transition: transform 0.3s ease;
 }
 nav>ul>li>a:hover{
     transform: scale(1.1);
+    background-color: #3E5879;
+    border-radius: 12px;
 }
 main>.inicio{
     display: flex;
@@ -59,6 +64,20 @@ main>.inicio>div>h1{
 main>.inicio>div>p{
     margin: 0;
     font-size: 18px;
+}
+main>.inicio>div>.links{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin: 15px 150px;
+    padding-top: 15px;
+}
+main>.inicio>div>.links>a>img{
+    width: 65px;
+    transition: transform 0.3s ease;
+}
+main>.inicio>div>.links>a>img:hover{
+    transform: scale(1.1);
 }
 main>.conocimientos{
     display: flex;
@@ -113,4 +132,81 @@ main>.conocimientos>.tecnologias>.tarjeta>section>h3{
 main>.conocimientos>.tecnologias>.tarjeta>section>ul{
     padding: 0px 20px;
 }
-
+main>.proyectos{
+    display: flex;
+    height: 100vh;
+    background-color: #F1F0E8;
+    padding-top: 50px;
+}
+main>.sobre_mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E5E1DA;
+}
+main>.sobre_mi>.contenido_sobremi{
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    padding: 16px;
+}
+main>.sobre_mi>.contenido_sobremi>h3{
+    margin-bottom: 30px;
+}
+main>.sobre_mi>.contenido_sobremi>p{
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    background-color: #B3C8CF;
+    box-shadow: 5px 2px 1px black;
+    margin-bottom: 20px;
+}
+main>.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #B3C8CF;
+    padding-top: 50px;
+}
+main>.contacto>.formulario_contacto{
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    background-color: #E5E1DA;
+    box-shadow: 5px 2px 1px black;
+}
+main>.contacto>.formulario_contacto>form>h3{
+    margin-bottom: 20px;
+}
+main>.contacto>.formulario_contacto>form>.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+main>.contacto>.formulario_contacto>form>.campo input, textarea{
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+main>.contacto>.formulario_contacto>form>.campo textarea{
+    resize: none;
+}
+main>.contacto>.formulario_contacto>form>.campo button{
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 2px 1px black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
