@@ -226,6 +226,8 @@ main > .contacto > .formulario_contacto > form > .campo button {
   font-size: 14px;
   cursor: pointer;
 }
+
+/* Estilos para pantallas menores a 992px */
 @media (max-width: 992px) {
   header > nav {
     display: flex;
@@ -256,5 +258,66 @@ main > .contacto > .formulario_contacto > form > .campo button {
   }
   #menu-toggle:checked ~ .menu {
     display: flex;
+  }
+  main > .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30%;
+    height: 100vh;
+    width: 100%;
+    background-color: #b3c8cf;
+  }
+  main > .inicio > img {
+    max-width: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+  main > .inicio > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+  }
+  main > .inicio > div > .links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+  }
+  main > .conocimientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e5e1da;
+    padding-top: 15%;
+  }
+  main > .conocimientos > .tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    margin: 15px;
+    padding: 8px;
+  }
+  main > .conocimientos > .tecnologias > .tarjeta {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  main > .conocimientos > .tecnologias > .tarjeta > section {
+    background-color: #b3c8cf;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    width: 60%;
+    height: auto;
+    box-shadow: 3px 1px 1px black;
   }
 }
