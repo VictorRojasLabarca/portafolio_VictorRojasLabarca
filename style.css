@@ -158,7 +158,7 @@ main > .proyectos {
 main > .proyectos > .slideshow{
   display: flex;
   position: relative;
-  width: 60%;
+  width: 50%;
   overflow: hidden;
   margin-top: 150px;
 }
@@ -171,7 +171,7 @@ main > .proyectos > .slideshow > .misImgs{
 main > .proyectos > .slideshow > .misImgs img {
   width: 100%;
   height: auto;
-  max-height: 600px;
+  max-height: 500px;
 }
 main > .proyectos > .slideshow >.next, 
 main > .proyectos > .slideshow >.prev{
@@ -201,11 +201,11 @@ main> .proyectos > .slideshow > .next:hover{
 }
 main> .proyectos > .slideshow > .misImgs > .textImg{
   color: #f2f2f2;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 0;
   width: 100%;
   text-align: center;
 }
@@ -217,6 +217,22 @@ main> .proyectos > .slideshow > .misImgs > .numeroImg{
   position: absolute;
   top: 0;
   font-weight: bold;
+}
+main > .proyectos > .info_proyecto{
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+main > .proyectos > .info_proyecto a {
+  color: #3e5879;
+  text-decoration: none;
+  font-weight: bold;
+}
+main > .proyectos > .info_proyecto a:hover {
+  text-decoration: underline;
 }
 main> .proyectos > .dotGrupo > .dot{
   cursor: pointer;
@@ -247,7 +263,7 @@ main > .sobre_mi {
   align-items: center;
   height: 100vh;
   background-color: #e5e1da;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 main > .sobre_mi > .contenido_sobremi {
   width: 100%;
@@ -265,6 +281,7 @@ main > .sobre_mi > .contenido_sobremi > p {
   background-color: #b3c8cf;
   box-shadow: 5px 2px 1px black;
   margin-bottom: 20px;
+  text-align: justify;
 }
 main > .contacto {
   display: flex;

@@ -1,3 +1,40 @@
+//Datos de imagen y texto.
+const proyectosInfo = [
+    {
+        titulo: "Pokedex",
+        descripcion: "Pokedex interactiva que muestra información básica sobre un pokémon.",
+        tecnologia: "Html, Css , Javascript.",
+        link:""
+    },
+    {
+        titulo: "Prueba 1",
+        descripcion: "Prueba 1",
+        tecnologia: "Prueba 1",
+        link:"Prueba 1"
+    },
+    {
+        titulo: "Prueba 2",
+        descripcion: "Prueba 2",
+        tecnologia: "Prueba 2",
+        link:"Prueba 2"
+    }
+];
+
+//Actualizar texto de los proyectos.
+function cambiarInfo(index){
+    const contenedorTitulo = document.querySelectorAll('.textImg')[index];
+    const contenedorInfo = document.querySelector('.info_proyecto');
+    //Cambiar el título de la imagen.
+    contenedorTitulo.textContent = proyectosInfo[index].titulo;
+    //Cambiar los detalles del proyecto.
+    contenedorInfo.innerHTML = `
+    <p>${proyectosInfo[index].descripcion}</p>
+    <p>Tecnologías: ${proyectosInfo[index].tecnologia}</p>
+    <a href="${proyectosInfo[index].link}" target="a_blank">Visitar proyecto</a>
+    `;
+}
+
+
 // Animación slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -28,4 +65,6 @@ function showSlides(n){
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className +=" active";
+
+    cambiarInfo(slideIndex - 1);
 }
