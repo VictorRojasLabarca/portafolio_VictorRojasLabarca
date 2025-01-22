@@ -8,11 +8,13 @@
     <title>Portafolio Victor Rojas Labarca</title>
   </head>
   <body>
+    <!-- Barra de navegación -->
     <header>
       <nav>
-        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" />
         <label id="label-menu" for="menu-toggle">
-          <img src="assets/menu_36.svg" alt="menu"/></label>
+          <img src="assets/menu_36.svg" alt="menu"
+        /></label>
         <ul class="menu">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#conocimientos">Conocimientos</a></li>
@@ -22,6 +24,9 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Contenido principal -->
+    <!-- Inicio -->
     <main>
       <div class="inicio" id="inicio">
         <img src="assets/perfil.jpg" alt="imagen_perfil" />
@@ -29,8 +34,8 @@
           <h1>Hola! mi nombre es Victor Rojas Labarca</h1>
           <p>Técnico informático que le gusta el desarollo Backend.</p>
           <div class="links">
-            <a href="#"
-              ><img 
+            <a href="https://github.com/VictorRojasLabarca?tab=repositories"
+              ><img
                 src="/assets/github-mark.svg"
                 alt="logo_github"
                 title="Link a Github"
@@ -45,6 +50,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Conocimientos y título -->
       <div class="conocimientos" id="conocimientos">
         <div class="titulo">
           <h2>Título</h2>
@@ -97,9 +104,38 @@
           </div>
         </div>
       </div>
+
+      <!-- Proyectos -->
       <div class="proyectos" id="proyectos">
-        <p>Acá irán los proyectos</p>
+        <div class="slideshow">
+          <div class="misImgs fade">
+            <div class="numeroImg">1 / 3</div>
+            <img src="/assets/imgProyectos/img1.webp" alt="imagen_1" />
+            <div class="textImg">Caption 1</div>
+          </div>
+          <div class="misImgs fade">
+            <div class="numeroImg">2 / 3</div>
+            <img src="/assets/imgProyectos/img2.webp" alt="imagen_1" />
+            <div class="textImg">Caption 2</div>
+          </div>
+          <div class="misImgs fade">
+            <div class="numeroImg">3 / 3</div>
+            <img src="/assets/imgProyectos/img3.webp" alt="imagen_1" />
+            <div class="textImg">Caption 3</div>
+          </div>
+          <!-- Botones siguiente y anterior -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- Circulos -->
+        <div class="dotGrupo">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
+
+      <!-- Sobre mí -->
       <div class="sobre_mi" id="sobre_mi">
         <div class="contenido_sobremi">
           <h3>Un poco sobre mí</h3>
@@ -118,9 +154,14 @@
           </p>
         </div>
       </div>
+
+      <!-- Formulario de contacto -->
       <div class="contacto" id="contacto">
         <div class="formulario_contacto">
-          <form action="https://formsubmit.co/contacto@minisitiesvictoralejandro.com" method="POST" />
+          <form
+            action="https://formsubmit.co/contacto@minisitiesvictoralejandro.com"
+            method="POST"
+          >
             <h3>Formulario de contacto</h3>
             <div class="campo">
               <label for="nombre">Nombre:</label>
@@ -155,7 +196,6 @@
             <div class="campo">
               <button type="submit">Enviar</button>
             </div>
-            <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#inicio"> -->
           </form>
         </div>
       </div>
