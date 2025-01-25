@@ -4,7 +4,7 @@ const proyectosInfo = [
         titulo: "Pokedex",
         descripcion: "Pokedex interactiva que muestra información básica sobre un pokémon.",
         tecnologia: "Html, Css , Javascript.",
-        link:""
+        link:"https://github.com/VictorRojasLabarca/proyecto_pokedex"
     },
     {
         titulo: "Prueba 1",

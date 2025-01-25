@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+/* Barra de navegación */
 header {
   position: sticky;
   top: 0px;
@@ -47,6 +48,7 @@ header > nav > .menu > li > a:hover {
 #label-menu {
   display: none;
 }
+/* Inicio */
 main > .inicio {
   display: flex;
   flex-direction: row;
@@ -92,6 +94,7 @@ main > .inicio > div > .links > a > img {
 main > .inicio > div > .links > a > img:hover {
   transform: scale(1.1);
 }
+/* Estudios, conocimientos */
 main > .conocimientos {
   display: flex;
   flex-direction: column;
@@ -112,6 +115,15 @@ main > .conocimientos > .titulo > p {
 }
 main > .conocimientos > .cursos > p {
   margin-top: 6px;
+}
+main > .conocimientos > .titulo > p > a,
+main > .conocimientos > .cursos > p > a{
+  color: #3e5879;
+  text-decoration: none;
+}
+main > .conocimientos > .titulo > p > a:hover,
+main > .conocimientos > .cursos > p > a:hover{
+  text-decoration: underline;
 }
 main > .conocimientos > .tecnologias {
   display: flex;
@@ -146,6 +158,7 @@ main > .conocimientos > .tecnologias > .tarjeta > section > h3 {
 main > .conocimientos > .tecnologias > .tarjeta > section > ul {
   padding: 0px 20px;
 }
+/* Proyectos personales */
 main > .proyectos {
   display: flex;
   flex-direction: column;
@@ -206,7 +219,9 @@ main> .proyectos > .slideshow > .misImgs > .textImg{
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 44%;
+  /* width: 100%; */
+  background-color: rgba(2, 2, 2, 0.5);
   text-align: center;
 }
 main> .proyectos > .slideshow > .misImgs > .numeroImg{
@@ -217,6 +232,7 @@ main> .proyectos > .slideshow > .misImgs > .numeroImg{
   position: absolute;
   top: 0;
   font-weight: bold;
+  background-color: rgba(2, 2, 2, 0.5);
 }
 main > .proyectos > .info_proyecto{
   position: relative;
@@ -256,6 +272,7 @@ main> .proyectos > .dotGrupo > .dot:hover{
   from {opacity: .4}
   to {opacity: 1}
 }
+/* Sobre mí */
 main > .sobre_mi {
   display: flex;
   flex-direction: column;
@@ -283,6 +300,7 @@ main > .sobre_mi > .contenido_sobremi > p {
   margin-bottom: 20px;
   text-align: justify;
 }
+/* Formulario contacto */
 main > .contacto {
   display: flex;
   flex-direction: column;
