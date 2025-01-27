@@ -68,3 +68,7 @@ function showSlides(n){
 
     cambiarInfo(slideIndex - 1);
 }
+
+// Obtener año
+const fecha_anio = new Date().getFullYear();
+document.getElementById('anio').textContent = fecha_anio;

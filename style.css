@@ -349,7 +349,12 @@ main > .contacto > .formulario_contacto > form > .campo button {
   font-size: 14px;
   cursor: pointer;
 }
-
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  background-color: #89a8b2;
+}
 /* Estilos para pantallas menores a 992px */
 @media (max-width: 992px) {
   header > nav {
