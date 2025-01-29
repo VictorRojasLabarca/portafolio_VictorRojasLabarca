@@ -72,3 +72,15 @@ function showSlides(n){
 // Obtener año
 const fecha_anio = new Date().getFullYear();
 document.getElementById('anio').textContent = fecha_anio;
+
+// Agregar timestap a css  y js para evitar cache.
+function agregarTimeStamp(url){
+    return url + '?t=' + new Date().getTime();
+}
+// Actualizar css
+document.getElementById('cssFile').href= agregarTimeStamp('style.css');
+// Actualizar js
+var script = document.createElement('script');
+script.src = agregarTimeStamp('script.js');
+script.defer = true;
+document.head.appendChild(script);
