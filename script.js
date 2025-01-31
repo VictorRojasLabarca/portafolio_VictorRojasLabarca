@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+// Agregar timestap a css  y js para evitar cache.
+function agregarTimeStamp(url){
+    return url + '?t=' + new Date().getTime();
+}
+// Actualizar css
+document.getElementById('cssFile').href= agregarTimeStamp('style.css');
+// Actualizar js
+// var script = document.createElement('script');
+// script.src = agregarTimeStamp('script.js');
+// script.defer = true;
+// document.head.appendChild(script);
+var scriptOriginal = document.querySelector('script[src="script.js"]');
+if(scriptOriginal){
+    scriptOriginal.remove();
+    var scriptNuevo = document.createElement('script');
+    scriptNuevo.src = agregarTimeStamp('script.js');
+    scriptNuevo.defer = true;
+    document.head.appendChild(scriptNuevo);
+}
+
 //Datos de imagen y texto.
 const proyectosInfo = [
     {
@@ -19,7 +40,6 @@ const proyectosInfo = [
         link:"Prueba 2"
     }
 ];
-
 //Actualizar texto de los proyectos.
 function cambiarInfo(index){
     const contenedorTitulo = document.querySelectorAll('.textImg')[index];
@@ -33,8 +53,6 @@ function cambiarInfo(index){
     <a href="${proyectosInfo[index].link}" target="a_blank">Visitar proyecto</a>
     `;
 }
-
-
 // Animación slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -72,15 +90,4 @@ function showSlides(n){
 // Obtener año
 const fecha_anio = new Date().getFullYear();
 document.getElementById('anio').textContent = fecha_anio;
-
-// Agregar timestap a css  y js para evitar cache.
-function agregarTimeStamp(url){
-    return url + '?t=' + new Date().getTime();
-}
-// Actualizar css
-document.getElementById('cssFile').href= agregarTimeStamp('style.css');
-// Actualizar js
-var script = document.createElement('script');
-script.src = agregarTimeStamp('script.js');
-script.defer = true;
-document.head.appendChild(script);
+});
