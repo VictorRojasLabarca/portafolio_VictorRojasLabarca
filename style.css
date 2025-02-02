@@ -164,7 +164,7 @@ main > .proyectos {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: #f1f0e8;
   padding-top: 0px;
 }
@@ -173,7 +173,7 @@ main > .proyectos > .slideshow{
   position: relative;
   width: 50%;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 main > .proyectos > .slideshow > .misImgs{
   display: none;
@@ -183,8 +183,8 @@ main > .proyectos > .slideshow > .misImgs{
 }
 main > .proyectos > .slideshow > .misImgs img {
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  height: 450px;
+  max-height: 450px;
 }
 main > .proyectos > .slideshow >.next, 
 main > .proyectos > .slideshow >.prev{
@@ -219,7 +219,7 @@ main> .proyectos > .slideshow > .misImgs > .textImg{
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  left: 44%;
+  left: 40%;
   /* width: 100%; */
   background-color: rgba(2, 2, 2, 0.5);
   text-align: center;

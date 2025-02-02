@@ -28,10 +28,10 @@ const proyectosInfo = [
         link:"https://github.com/VictorRojasLabarca/proyecto_pokedex"
     },
     {
-        titulo: "Prueba 1",
-        descripcion: "Prueba 1",
-        tecnologia: "Prueba 1",
-        link:"Prueba 1"
+        titulo: "Acortador de URL",
+        descripcion: "Acortador de URL como página web.",
+        tecnologia: "Css|Bootstrap, Python|Flask",
+        link:"https://github.com/VictorRojasLabarca/Acortador-URL-Python-Flask"
     },
     {
         titulo: "Prueba 2",
@@ -57,10 +57,23 @@ function cambiarInfo(index){
 let slideIndex = 1;
 showSlides(slideIndex);
 
+document.querySelector('.prev').addEventListener('click', function(){
+    plusSlides(-1);
+});
+document.querySelector('.next').addEventListener('click', function(){
+    plusSlides(1);
+});
 function plusSlides(n){
     showSlides(slideIndex += n);
 }
 
+const dots = document.querySelectorAll('.dot');
+dots.forEach(dot =>{
+    dot.addEventListener('click', function(){
+        const slideNumber = parseInt(this.getAttribute('data-slide'));
+        currentSlide(slideNumber);
+    });
+});
 function currentSlide(n){
     showSlides(slideIndex = n);
 }
